@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - npm install --force
+      - npm install serverless -g
+      - npm install @serverless/cli -g
+  build:
+    commands:
+      - n 16.17.0
+      - components-v1
+#artifacts:
+#  files:
+#    - '**/*'
+#  discard-paths: no
+#  base-directory: out

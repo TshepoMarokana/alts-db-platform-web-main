@@ -1,0 +1,9 @@
+# serverless.yml
+
+altsDb:
+  component: "./node_modules/@sls-next/serverless-component" #specify latest stable version
+  inputs:
+    bucketName: ${env.webBucket}
+    roleArn: "arn:aws:iam::656114780823:role/nygvfxo-ufm55u8"
+    cloudfront:
+      distributionId: ${env.cloudfrontDistribution}
